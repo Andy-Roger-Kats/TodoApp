@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 
 function Form(props) {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
+  function isStringValid(string) {
+    if (string.length > 0 && typeof string === "string") {
+      return true;
+    } else {
+      console.log("argument is not a string");
+      return false;
+    }
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!name.trim()) {
+    if (!isStringValid(name)) {
       return;
     }
     props.addTask(name);
     setName("");
   }
-
 
   function handleChange(e) {
     setName(e.target.value);
