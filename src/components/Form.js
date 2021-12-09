@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
+export function isStringValid(string) {
+  if (string.length > 0 && typeof string === "string") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function Form(props) {
   const [name, setName] = useState("");
-
-  function isStringValid(string) {
-    if (string.length > 0 && typeof string === "string") {
-      return true;
-    } else {
-      console.log("argument is not a string");
-      return false;
-    }
-  }
 
   function handleSubmit(e) {
     e.preventDefault();

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The <Todo/> component should match its snapshot 1`] = `
+<li
+  className="todo"
+>
+  <div
+    className="stack-small"
+  >
+    <div
+      className="c-cb"
+    >
+      <input
+        defaultChecked={true}
+        id="todo-0"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <label
+        className="todo-label"
+        htmlFor="todo-0"
+      >
+        Eat
+      </label>
+    </div>
+    <div
+      className="btn-group"
+    >
+      <button
+        className="btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Edit 
+        <span
+          className="visually-hidden"
+        >
+          Eat
+        </span>
+      </button>
+      <button
+        className="btn btn__danger"
+        onClick={[Function]}
+        type="button"
+      >
+        Delete 
+        <span
+          className="visually-hidden"
+        >
+          Eat
+        </span>
+      </button>
+    </div>
+  </div>
+</li>
+`;
