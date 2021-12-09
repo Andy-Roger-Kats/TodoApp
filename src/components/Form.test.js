@@ -1,12 +1,4 @@
-// import { isStringValid } from "./Form";
-
-function isStringValid(string) {
-  if (string.length > 0 && typeof string === "string") {
-    return true;
-  } else {
-    return false;
-  }
-}
+import { isStringValid } from "./Form";
 
 describe("isStringValid function", () => {
   it("should return true if 'Buy apples' is passed in as an argument", () => {
